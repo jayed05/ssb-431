@@ -1,0 +1,392 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #33417c;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Monserrat semiBold;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #e65826;
+}
+
+.banner {
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 75px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.height {
+    min-height: 90vh;
+}
+
+.icons {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    font-size: 24px;
+    transform: translateX(-50%);
+    animation: any 1s infinite;
+    animation direction: alternate;
+    color: #fff
+}
+
+@keyframes any {
+    0% {
+        bottom: 60px;
+    }
+
+    100% {
+        bottom: 40px;
+    }
+}
+
+.who_we_are {
+    padding: 100px 0;
+}
+
+.who_we_are:hover span {
+    width: 50px;
+    transition: .4s all ease-in-out
+}
+
+.who_we_are span {
+    background: #e76128;
+    display: block;
+    height: 3px;
+    width: 50px;
+    margin-top: 50px;
+}
+
+
+.who_we_are h1 {
+    margin: 18px 0;
+    color: #33417c;
+}
+
+.who_we_are p {
+    color: #BAB5AF;
+}
+
+.what_we_do {
+    background-color: #fbfbfb;
+    padding: 50px 0;
+    background-image: url(../images/hero.2.png);
+    background-size: 70%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.heading {}
+
+.heading h1 {
+    text-transform: uppercase;
+    color: #33417c;
+    margin-bottom: 200px;
+    padding: 10px;
+}
+
+.heading span {
+    background: #e76128;
+    display: block;
+    height: 3px;
+    width: 50px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.what_we_do_item {
+    position: relative;
+}
+
+.what_we_do_item img {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.arrow {
+    color: #fff;
+    left: 45%;
+    bottom: 50px;
+    font-size: 20px;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.what_we_do_item:hover .content {
+    opacity: 1;
+    top: 50%;
+}
+
+.what_we_do_item:hover .arrow {
+    left: 47%;
+    opacity: 1;
+}
+
+.what_we_do_item::before {
+    content: ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: .4s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c539e+0,2c539e+0,2c539e+0,341c68+100&0+1,1+100 */
+    background: -moz-linear-gradient(top, rgba(44, 83, 158, 0) 0%, rgba(44, 82, 157, 0) 1%, rgba(52, 28, 104, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(44, 83, 158, 0) 0%, rgba(44, 82, 157, 0) 1%, rgba(52, 28, 104, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(44, 83, 158, 0) 0%, rgba(44, 82, 157, 0) 1%, rgba(52, 28, 104, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002c539e', endColorstr='#341c68', GradientType=0);
+    /* IE6-9 */
+
+}
+
+.what_we_do_item:hover::before {
+    height: 100%
+}
+
+.attorneys {
+    background-image: url(../images/picture-9.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.attorneys::before {
+    content: ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #64337c;
+    z-index: -1;
+}
+
+.heading_two {
+    /* margin-top: 200px; */
+    text-align: center;
+}
+
+.heading_two span {
+
+    background: #e76128;
+
+    display: block;
+
+    height: 3px;
+
+    width: 50px;
+
+    margin: auto;
+
+    margin-top: 50px;
+}
+
+.heading_two h1 {
+
+    padding: 10px 0;
+
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.heading_two p {
+
+    color: #fff;
+}
+
+.heading_two a {
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    font-size: 13px;
+
+    font-weight: 700;
+    color: #e76128
+}
+
+.attorney_items {
+
+    position: relative;
+}
+
+.attorney_items img {}
+
+.attorney_content {
+
+    position: absolute;
+
+    left: 40px;
+
+    bottom: 40px;
+
+    color: #fff;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.attorney_content h2 {
+
+    font-size: 28px;
+
+}
+
+.attorney_items:hover .attorney_content {
+    opacity: 1;
+    bottom: 45px;
+}
+
+attorney_content::before {
+    content: ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: .4s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c539e+0,2c539e+0,2c539e+0,341c68+100&0+1,1+100 */
+    background: -moz-linear-gradient(top, rgba(44, 83, 158, 0) 0%, rgba(44, 82, 157, 0) 1%, rgba(52, 28, 104, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(44, 83, 158, 0) 0%, rgba(44, 82, 157, 0) 1%, rgba(52, 28, 104, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(44, 83, 158, 0) 0%, rgba(44, 82, 157, 0) 1%, rgba(52, 28, 104, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002c539e', endColorstr='#341c68', GradientType=0);
+    /* IE6-9 */
+
+}
+
+.languages {}
+
+.description span {
+
+    background: #e76128;
+
+    display: block;
+
+    height: 3px;
+
+    width: 50px;
+
+    margin: auto;
+
+    margin-top: 59px;
+
+    padding: 1;
+}
+
+.description h2 {
+
+    margin-bottom: 90px;
+
+    text-align: center;
+
+    font-size: 32px;
+
+    text-transform: uppercase;
+
+    font-weight: 700;
+
+    color: #33417c;
+
+    margin-top: 10px;
+}
+
+.paragraph {}
+
+.paragraph h3 {
+
+    font-weight: 700;
+
+    font-size: 15px;
+
+    color: #33417c;
+}
+
+.paragraph p {
+
+    color: #bab5b2;
+}
+
+.paragraph a {
+    color: #e76128;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    padding-bottom: 70px;
+}
+
+.contact {
+    background-color: #36226f;
+    padding: 50px 0;
+    margin-top: 72px;
+}
+
+.contact .heading.h1 {
+    color: #fff
+}
+
+.form { 
+    text-align: center;
+}
+
+.form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+
+.form textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+
+.form input[type="submit"] {
+    background-color: #e65826;
+    color: #fff;
+    padding: 5px 37px;
+    border-radius: 5px;
+}
